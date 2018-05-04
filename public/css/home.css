@@ -1,0 +1,30 @@
+
+@font-face{
+	font-weight: normal;
+	font-style: normal;
+	font-family: "SIMPLIFICA";
+	src:url ("../fonts/SIMPLIFICA_Typeface.ttf");
+}
+
+section {
+	height: 100vh;
+}
+.landing-page{
+	color: white;
+	background-color: #080808;
+	font-family: "SIMPLIFICA";
+	position: relative;
+	width: auto;
+}
+.overall,h1, h2{
+	position: relative;
+	top:30%;
+}
+
+.overall,a{
+	 text-align: center;
+}
+
+h2{
+	color: #BBBBBB;
+}

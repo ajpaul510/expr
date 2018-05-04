@@ -1,0 +1,31 @@
+
+<link rel="stylesheet" href="css/contact.css">
+
+<div class="container col-9">
+	<div class="row">
+		<div class="col">
+			<h4>Contact me</h4>
+			<p>Feel free to contact me about my projects or blog post!</p>
+		<form id="cform"  method="POST" action="/note">
+		  	<div class="form-group">
+		   		<label>Name</label>
+		    	<input type="text" class="form-control" id="formGroupName" placeholder="Enter name" name="name">
+		    </div>
+
+		    <div class="form-group">
+		    	<label>Email</label>
+		    	<input type="text" class="form-control" id="formGroupEmail" placeholder="Enter email" name="email">
+		    </div>
+
+		    <div class="form-group">
+		  	 	<label>Your message</label>
+
+				<textarea class="form-control" name="content" rows="6">
+				</textarea>
+			</div>
+
+			<div class="form-group"> <button type="submit" class="btn">Submit</button></div>
+		</form>
+		</div>
+	</div>
+</div>

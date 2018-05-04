@@ -1,0 +1,27 @@
+
+h4, p, label, button{
+
+	font-family: "helvetica-neue-thin", helvetica, sans-serif;
+	color: #cccccc;
+}
+
+/*
+pushing the "contact me" text down so it doesn't look pushed
+up against the navbar
+*/
+
+h4{
+	margin-top: 10px;
+	font-size: 1.5em;
+	color: white;
+}
+.row{
+	margin-top: 5%;
+}
+.form-control{
+	background-color: #e5e5e5;
+}
+button{
+	color: white;
+	background-color: #1ab431;
+}
