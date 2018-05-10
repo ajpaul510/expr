@@ -1,51 +1,27 @@
-
-var express = require('express');
 var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
+var routes = require('./routes/index');
+var express = require('express');
 var mysql = require('mysql');
 var path = require('path');
-var routes = require('./routes/index')
+var opn = require('opn');
+
 var app = express();
 
-app.engine('handlebars', exphbs({
-    defaultLayout: 'main'
-}));
 
-
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 
+app.use('/', routes);
 
 // Use Public directory for static files
 app.use(express.static(path.join(__dirname, 'public')))
 
 // Bodyparser middleware
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
-
-app.use('/', routes);
+app.use(bodyParser.urlencoded({ extended: false }));
 
 
-
-// // ************** DB *************************
-
-// var connection = mysql.createConnection({
-//     host: 'localhost',
-//     user: 'root',
-//     password: 'Ajaypal1',
-//     database: 'website'
-// });
-
-
-// connection.connect(function(error){
-
-//     if (!!error) {
-//         console.log('ERROR now database called website found!');
-//     }else{
-//         console.log('Worked');
-//     }
-// });
-
-// // ********************************************
-
+opn('http://localhost:5000/');
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
