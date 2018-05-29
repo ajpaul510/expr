@@ -2,11 +2,16 @@
 <link rel="stylesheet" href="css/contact.css">
 
 <div class="container col-9">
+    {{#if errors}}
+        {{#each errors}}
+            <div class="alert alert-danger">{{msg}}</div>
+        {{/each}}
+    {{/if}}
 	<div class="row">
 		<div class="col">
 			<h4>Contact me</h4>
 			<p>Feel free to contact me about my projects or blog post!</p>
-		<form id="cform"  method="POST" action="/note">
+		<form id="cform"  method="POST">
 		  	<div class="form-group">
 		   		<label>Name</label>
 		    	<input type="text" class="form-control" id="formGroupName" placeholder="Enter name" name="name">
