@@ -31,9 +31,14 @@ router.post('/contact', function (req, res) {
         res.redirect('/')
 
     }
-
 });
 
+router.get('/about', function (req, res) {
 
+    res.render('about');
+});
 
+router.get('/experience', function (req, res) {
+
+});
 module.exports = router;
