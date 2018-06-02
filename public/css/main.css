@@ -9,7 +9,7 @@ body{
 	color: white;
 	/*font-family:  Simplifica;*/
 }
-
 #icons:hover{
 	opacity: 0.3;
+    visibility:visible;
 }

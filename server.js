@@ -39,9 +39,10 @@ app.use(expressValidator({
 
 app.use('/', routes);
 
+
 // Error functions
 app.use(function (req, res, next) {
-  res.status(404).send("Sorry can't find that!")
+  res.status(404).render('404')
 });
 
 
