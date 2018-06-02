@@ -3,7 +3,6 @@ let exphbs = require('express-handlebars');
 let bodyParser = require('body-parser');
 let routes = require('./routes/index');
 let express = require('express');
-let mysql = require('mysql');
 let path = require('path');
 let opn = require('opn');
 

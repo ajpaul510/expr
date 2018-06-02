@@ -1,6 +1,6 @@
 let express = require('express');
 let router = express.Router();
-
+let database = require('../models/user.js');
 
 router.get('/', function (req, res) {
     res.render('home')
@@ -27,9 +27,10 @@ router.post('/contact', function (req, res) {
         });
     }
     else{
-        // db.insert
-        res.redirect('/')
-
+        database.insert_message(user_info, function (err) {
+            if (err) throw err;
+            res.redirect('/')
+        });
     }
 });
 
