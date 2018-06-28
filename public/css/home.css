@@ -6,15 +6,19 @@
 	src:url ("../fonts/SIMPLIFICA_Typeface.ttf");
 }
 
-section {
+/*section {
+	display: block;
 	height: 100vh;
-}
+}*/
+
 .landing-page{
 	color: white;
 	background-color: #080808;
 	font-family: "SIMPLIFICA";
 	position: relative;
 	width: auto;
+	margin-top: 20vh
+
 }
 .overall,h1, h2{
 	position: relative;
