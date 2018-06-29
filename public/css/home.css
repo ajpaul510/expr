@@ -6,11 +6,6 @@
 	src:url ("../fonts/SIMPLIFICA_Typeface.ttf");
 }
 
-/*section {
-	display: block;
-	height: 100vh;
-}*/
-
 .landing-page{
 	color: white;
 	background-color: #080808;
@@ -31,4 +26,9 @@
 
 h2{
 	color: #BBBBBB;
+}
+
+a{
+	font-size: 1.10em;
+	padding: 10px;
 }
