@@ -27,10 +27,11 @@ router.post('/contact', function (req, res) {
         });
     }
     else{
-        database.insert_message(user_info, function (err) {
-            // if (err) throw err;
-            res.redirect('/')
-        });
+        // database.insert_message(user_info, function (err) {
+        //     if (err) throw err;
+        //     res.redirect('/')
+        // });
+        res.redirect('/')
     }
 });
 
